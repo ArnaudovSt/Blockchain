@@ -1,0 +1,19 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Practical Blockchain Project for Blockchain Dev Camp - Sofia - February 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnaudovSt/Blockchain.git"
+  },
+  "author": "Stefan Arnaudov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnaudovSt/Blockchain/issues"
+  },
+  "homepage": "https://github.com/ArnaudovSt/Blockchain#readme"
+}
