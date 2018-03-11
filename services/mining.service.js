@@ -29,7 +29,7 @@ class MiningService {
         this._blockchainDetails.pendingTransactions.push(coinBaseTransaction);
 
         const currentTransactions = pendingTransactions;
-        const transactionsHash = CryptoJS.SHA256(currentTransactions).toString();
+        const transactionsHash = CryptoJs.SHA256(currentTransactions).toString();
         const prevBlockHash = this._blockchainService.getLatestBlock().blockHash;
 
         const jobForMining = new MiningJob(index, expectedReward, currentTransactions, transactionsHash, prevBlockHash, this._blockchainDetails.difficulty);
