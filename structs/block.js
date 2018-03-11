@@ -1,4 +1,4 @@
-const Transaction = require("./structs/transaction");
+const Transaction = require("./transaction");
 
 class Block {
     constructor(index, transactions, difficulty, prevBlockHash, minedBy, blockDataHash, nonce, dateCreated, blockHash) {

@@ -54,3 +54,5 @@ class MiningService {
         }
     }
 }
+
+module.exports = MiningService;

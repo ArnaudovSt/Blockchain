@@ -154,7 +154,7 @@ class NodeController {
         );
     }
 
-    getPeers = (req, res, next) => {
+    getPeers(req, res) {
         res.setHeader('Content-Type', 'application/json');
         res.send(this._blockchainDetails.peers);
     }
