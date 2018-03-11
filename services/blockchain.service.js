@@ -7,7 +7,7 @@ class BlockchainService {
 
     getBlockHash(block) {
         const merkleRoot = CryptoJs.SHA256(block.transactions);
-        const hashData = `${block.index}${merkleRoot}${block.prevBlockHash}${block.dateCreated}${block.dateCreated}${block.nonce}`;
+        const hashData = `${block.index}${merkleRoot}${block.prevBlockHash}${block.dateCreated}${block.nonce}`;
         return CryptoJs.SHA256(hashData) + '';
     }
 
@@ -17,7 +17,7 @@ class BlockchainService {
         }
     }
 
-    _getLatestBlock() {
+    getLatestBlock() {
         return this._blockchain[this._blockchain.length - 1];
     }
 
